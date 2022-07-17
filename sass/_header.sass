@@ -1,0 +1,164 @@
+.header
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  top: 0
+  width: 100%
+  max-width: 1080px
+  left: 50%
+  transform: translate(-50%)
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    @media (max-width: 1180px)
+      padding: 0 15px
+  &__logo-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 135px
+    min-height: 110px
+    background-color: white
+    box-shadow: 0px 4px 30px rgba(12, 26, 50, 0.1)
+    border-radius: 0px 0px 10px 10px
+    flex: 0 auto
+    margin-right: 93px
+    @media (max-width: 1180px)
+      margin-right: 40px
+    @media (max-width: 560px)
+      min-width: 100px
+      min-height: 90px
+
+  &__nav
+    display: flex
+    justify-content: space-between
+    flex: 1 auto
+    align-items: baseline
+    @media (max-width: 1040px)
+      display: none
+  &__logo
+    max-width: 75px
+    max-height: 43px
+    @media (max-width: 560px)
+      max-width: 55px
+      max-height: 33px
+
+  &__list
+    display: flex
+    align-items: center
+  &__items
+    &:nth-child(-n+4)
+      padding-right: 30px
+    &:nth-child(n+5)
+      padding-right: 25px
+    &:last-child
+      padding-right: 0
+  &__link
+    font-size: 14px
+  &__contact
+    display: flex
+    flex-direction: column
+
+  &__contact-link
+    font-size: 14px
+
+  &__contact-describe
+    font-size: 12px
+    color: rgba(73, 83, 101, 0.7)
+    margin-top: 8px
+
+  &__mobile-menu
+    display: none
+    @media (max-width: 1040px)
+      display: block
+
+
+.menu
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  width: 240px
+  background-color: white
+  z-index: 1100
+  overflow-y: auto
+  box-shadow: -4px 0px 75px rgba(12, 26, 50, 0.2)
+  &__wrapper
+    padding: 143px 23px 0 0
+    position: relative
+  &__options
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__title
+    font-size: 26px
+    line-height: 30px
+    letter-spacing: 0.025em
+    color: #0C1A32
+    margin-bottom: 35px
+
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-bottom: 55px
+
+  &__items
+    &:not(:last-child)
+      margin-bottom: 18px
+
+  &__phone-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-bottom: 28px
+
+  &__call
+    text-align: end
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.03em
+    color: rgba(73, 83, 101, 0.7)
+    margin-top: 10px
+
+  &__close
+    position: absolute
+    top: 45px
+    right: 23px
+    cursor: pointer
+
+  &__close-svg
+    width: 20px
+    height: 20px
+
+  &__socials
+    display: flex
+    justify-content: flex-end
+    gap: 10px
+
+  &__svg
+    width: 25px
+    height: 25px
+
+  &__address
+    margin-top: 150px
+    padding-bottom: 80px
+
+  &__address-text
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.03em
+    color: #495365
+    &:before
+      content: url("data:image/svg+xml,%3Csvg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.125 7.18522C13.125 11.5926 7.5 15.3704 7.5 15.3704C7.5 15.3704 1.875 11.5926 1.875 7.18522C1.875 5.68233 2.46763 4.24099 3.52252 3.17828C4.57742 2.11558 6.00816 1.51855 7.5 1.51855C8.99184 1.51855 10.4226 2.11558 11.4775 3.17828C12.5324 4.24099 13.125 5.68233 13.125 7.18522Z' stroke='%2300B3CB' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 9.07392C8.53553 9.07392 9.375 8.22824 9.375 7.18503C9.375 6.14183 8.53553 5.29614 7.5 5.29614C6.46447 5.29614 5.625 6.14183 5.625 7.18503C5.625 8.22824 6.46447 9.07392 7.5 9.07392Z' stroke='%2300B3CB' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      margin-right: 5px
+
+
