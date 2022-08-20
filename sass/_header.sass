@@ -1,0 +1,203 @@
+.header
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  top: 0
+  width: 100%
+  max-width: 1080px
+  left: 50%
+  transform: translate(-50%)
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    @media (max-width: 1180px)
+      padding: 0 15px
+  &__logo-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 135px
+    min-height: 110px
+    background-color: white
+    box-shadow: 0px 4px 30px rgba(12, 26, 50, 0.1)
+    border-radius: 0px 0px 10px 10px
+    flex: 0 auto
+    margin-right: 93px
+    @media (max-width: 1180px)
+      margin-right: 40px
+    @media (max-width: 560px)
+      min-width: 100px
+      min-height: 90px
+
+  &__nav
+    display: flex
+    justify-content: space-between
+    flex: 1 auto
+    align-items: baseline
+    @media (max-width: 1040px)
+      display: none
+  &__logo
+    max-width: 75px
+    max-height: 43px
+    @media (max-width: 560px)
+      max-width: 55px
+      max-height: 33px
+
+  &__list
+    display: flex
+    align-items: center
+  &__items
+    &:hover .header__link:before
+      content: ''
+      width: 100%
+
+    &:nth-child(-n+4)
+      padding-right: 30px
+    &:nth-child(n+5)
+      padding-right: 25px
+    &:last-child
+      padding-right: 0
+  &__link
+    position: relative
+    font-size: 14px
+    padding-bottom: 3px
+    &:before
+      content: ''
+      position: absolute
+      width: 0
+      height: 1px
+      bottom: 0
+      background-color: #00B3CB
+      transition: all .5s
+    &:hover
+      color: #00B3CB
+
+  &__contact
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__contact-link
+    display: flex
+    align-items: center
+    font-size: 14px
+    transition: color .5s
+    &:hover
+      color: #00B3CB
+    &:before
+      margin-right: 7px
+      content: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.6454 12.1441L10.2049 13.8388C10.1646 13.9963 10.0918 14.1436 9.99122 14.2713C9.8906 14.3991 9.76434 14.5044 9.62053 14.5806C9.47673 14.6567 9.31854 14.7021 9.15611 14.7136C8.99368 14.7252 8.83058 14.7028 8.67726 14.6478C6.98461 14.0062 5.46594 12.9773 4.24328 11.6439C3.10111 10.4211 2.24242 8.96246 1.72817 7.37167C1.15465 5.6493 0.995488 3.81669 1.26357 2.02228C1.29003 1.86239 1.34956 1.70979 1.43836 1.57418C1.52717 1.43858 1.6433 1.32294 1.77937 1.23464C1.91544 1.14634 2.06846 1.08731 2.2287 1.0613C2.38893 1.03529 2.55287 1.04288 2.71007 1.08359L4.40814 1.52498C4.68353 1.59368 4.9246 1.75999 5.08641 1.99289C5.24823 2.2258 5.31974 2.50941 5.28762 2.79087C5.21832 3.35184 5.21281 3.9189 5.27122 4.48123C5.29482 4.70322 5.25418 4.92725 5.15412 5.12677C5.05407 5.32629 4.89878 5.49294 4.70668 5.60697L3.80134 6.13754C4.23949 7.76124 5.10842 9.23721 6.31645 10.4097L7.22178 9.87916C7.41516 9.76728 7.63666 9.71312 7.86005 9.72308C8.08343 9.73305 8.29933 9.80673 8.48217 9.9354C8.94599 10.2601 9.44508 10.5315 9.96991 10.7443C10.2348 10.8544 10.45 11.0579 10.5745 11.316C10.6991 11.5741 10.7243 11.8688 10.6454 12.1441Z' stroke='%2300B3CB' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+
+  &__contact-describe
+    position: relative
+    font-size: 12px
+    color: rgba(73, 83, 101, 0.7)
+    margin-top: 8px
+    padding-bottom: 3px
+    cursor: pointer
+    transition: color .5s
+    &:hover
+      color: #495365
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 0.5px
+      background-color: rgba(73, 83, 101, 0.7)
+      bottom: 0
+
+  &__mobile-menu
+    display: none
+    @media (max-width: 1040px)
+      display: block
+
+
+.menu
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  width: 240px
+  background-color: white
+  z-index: 1100
+  overflow-y: auto
+  box-shadow: -4px 0px 75px rgba(12, 26, 50, 0.2)
+  &__wrapper
+    padding: 143px 23px 0 0
+    position: relative
+  &__options
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__title
+    font-size: 26px
+    line-height: 30px
+    letter-spacing: 0.025em
+    color: #0C1A32
+    margin-bottom: 35px
+
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-bottom: 55px
+
+  &__items
+    &:not(:last-child)
+      margin-bottom: 18px
+
+  &__phone-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-bottom: 28px
+
+  &__call
+    text-align: end
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.03em
+    color: rgba(73, 83, 101, 0.7)
+    margin-top: 10px
+
+  &__close
+    position: absolute
+    top: 45px
+    right: 23px
+    cursor: pointer
+
+  &__close-svg
+    width: 20px
+    height: 20px
+
+  &__socials
+    display: flex
+    justify-content: flex-end
+    gap: 10px
+
+  &__svg
+    width: 25px
+    height: 25px
+
+  &__address
+    margin-top: 150px
+    padding-bottom: 80px
+
+  &__address-text
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.03em
+    color: #495365
+    &:before
+      content: url("data:image/svg+xml,%3Csvg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.125 7.18522C13.125 11.5926 7.5 15.3704 7.5 15.3704C7.5 15.3704 1.875 11.5926 1.875 7.18522C1.875 5.68233 2.46763 4.24099 3.52252 3.17828C4.57742 2.11558 6.00816 1.51855 7.5 1.51855C8.99184 1.51855 10.4226 2.11558 11.4775 3.17828C12.5324 4.24099 13.125 5.68233 13.125 7.18522Z' stroke='%2300B3CB' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 9.07392C8.53553 9.07392 9.375 8.22824 9.375 7.18503C9.375 6.14183 8.53553 5.29614 7.5 5.29614C6.46447 5.29614 5.625 6.14183 5.625 7.18503C5.625 8.22824 6.46447 9.07392 7.5 9.07392Z' stroke='%2300B3CB' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      margin-right: 5px
+
+

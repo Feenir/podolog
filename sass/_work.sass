@@ -1,0 +1,79 @@
+.work
+  background: linear-gradient(76.39deg, #00B7CF 5.28%, #00CEEA 97.66%)
+  border-radius: 0px 0px 80px 80px
+  &__title
+    color: white
+    text-align: center
+    padding: 70px 0 50px 0
+  &__back
+    background-image: url("../img/scissors.svg"), url("../img/spikes.svg")
+    background-repeat: no-repeat
+    background-position: top left, bottom right
+    background-size: 114px 184px
+    max-width: 1920px
+    border-radius: 0px 0px 80px 80px
+    margin: 0 auto
+  &__box
+    display: flex
+    flex-wrap: wrap
+    padding-bottom: 70px
+    justify-content: space-evenly
+  &__items
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: calc(33.33% - 37px)
+    position: relative
+    &:nth-child(odd)
+      &:after
+        display: none
+        position: absolute
+        content: ''
+        width: 120px
+        height: 1px
+        background-color: rgba(255, 255, 255, 0.2)
+        top: 65px
+        left: calc(100% - 50px)
+        @media (max-width: 991px)
+          display: block
+        @media (max-width: 560px)
+          width: 30px
+          left: 98%
+        @media (max-width: 420px)
+          display: none
+    @media (max-width: 991px)
+      width: calc(50% - 25px)
+    @media (max-width: 370px)
+        width: 05100%
+    &:not(:last-child)
+      margin-bottom: 55px
+  &__img
+    margin-bottom: 15px
+    position: relative
+    &--line
+
+      &:after
+        position: absolute
+        content: ''
+        width: 120px
+        height: 1px
+        background-color: rgba(255, 255, 255, 0.2)
+        top: 50%
+        left: calc(100% + 40px)
+        @media (max-width: 991px)
+          display: none
+  &__svg
+    width: 127px
+    height: 127px
+  &__text
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    text-align: center
+    letter-spacing: 0.03em
+    color: #EFEFEF
+    max-width: 300px
+    @media (max-width: 991px)
+      font-size: 15px
+    @media (max-width: 560px)
+      font-size: 13px

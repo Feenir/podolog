@@ -1,0 +1,1576 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<script  src="https://api-maps.yandex.ru/2.1/?apikey=b9c24b9f-34ff-478e-b4ae-a69ea5b9244a&lang=ru_RU"
+	        type="text/javascript">
+	</script>
+	<title>Podolog</title>
+</head>
+<body>
+<header class="header">
+	<div class="header__wrapper">
+		<a class="header__logo-wrapper" href="#">
+			<svg class="header__logo">
+				<use xlink:href="img/set.svg#logo"></use>
+			</svg>
+		</a>
+		
+		<nav class="header__nav scrollto">
+			<ul class="header__list">
+				<li class="header__items"><a class="header__link scroll" href="#services">Услуги</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#advantages">Преимущества</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#results">Результаты</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#reviews">Отзывы</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#about">Обо мне</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#questions">Вопросы</a></li>
+				<li class="header__items"><a class="header__link scroll" href="#contacts">Контакты</a></li>
+			</ul>
+			<div class="header__contact">
+				<a class="header__contact-link" href="tel:+78008009999">+7 (800) 800-99-99</a>
+				<button class="header__contact-describe js-button js-callback" type="button">Заказать обратный звонок</button>
+			</div>
+		</nav>
+		
+		<div class="header__mobile-menu js-mobile-menuOpen">
+			<div class="mobile-menu">
+				<div class="mobile-menu__body"></div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<nav class="menu">
+	<div class="menu__wrapper">
+		<div class="menu__options">
+			<h3 class="menu__title">Меню</h3>
+			<ul class="menu__list scrollto">
+				<li class="menu__items"><a class="menu__link" href="#services">Услуги</a></li>
+				<li class="menu__items"><a class="menu__link" href="#advantages">Преимущества</a></li>
+				<li class="menu__items"><a class="menu__link" href="#results">Результаты</a></li>
+				<li class="menu__items"><a class="menu__link" href="#reviews">Отзывы</a></li>
+				<li class="menu__items"><a class="menu__link" href="#about">Обо мне</a></li>
+				<li class="menu__items"><a class="menu__link" href="#questions">Вопросы</a></li>
+				<li class="menu__items"><a class="menu__link" href="#contacts">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="menu__phone-wrapper">
+			<a class="menu__phone" href="tel:+78008009999">+7 (800) 800-99-99</a>
+			<a class="menu__call" href="#">Заказать обратный звонок</a>
+		</div>
+		<div class="menu__socials">
+			<a class="menu__svg-wrapper" href="#">
+				<svg class="menu__svg">
+					<use xlink:href="img/set.svg#vk"></use>
+				</svg>
+			</a>
+			<a class="menu__svg-wrapper" href="#">
+				<svg class="menu__svg">
+					<use xlink:href="img/set.svg#whatsapp"></use>
+				</svg>
+			</a>
+			<a class="menu__svg-wrapper" href="mailto:">
+				<svg class="menu__svg">
+					<use xlink:href="img/set.svg#mail"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="menu__address">
+			<p class="menu__address-text">
+				Западный бул., 18А, Ульяновск
+			</p>
+		</div>
+		<div class="menu__close js-closeBurger">
+			<svg class="menu__close-svg">
+				<use xlink:href="img/set.svg#close"></use>
+			</svg>
+		</div>
+	</div>
+</nav>
+<section class="hero" id="main">
+	<div class="container">
+		<div class="hero__wrapper">
+			<div class="hero__master-wrapper">
+				<div class="hero__box hero__title-box">
+					<h1 class="hero__title">Профессиональный <span
+							class="hero__title-color">аппаратный и подологический педикюр</span></h1>
+					<p class="hero__text">
+						Оставьте заявку и получите бесплатную консультацию и скидку в 10% на первый приём
+					</p>
+					<div class="hero__button-wrapper hero__button-wrapper--desk">
+						<button class="hero__button button js-button">оставить заявку</button>
+						<p class="hero__button-address">Западный бул., 18А, Ульяновск</p>
+					</div>
+				</div>
+				
+				<div class="hero__box hero__img-box">
+					<div class="hero__master-describe">
+						<img class="hero__master-mob"  src="img/master.png" alt="Мастер">
+						<div class="hero__mob-text">
+							<div class="hero__blur-block">
+								<p class="hero__master">Жарикова Ольга</p>
+								<p class="hero__specialist">Специалист по аппаратному педикюру и проблемным стопам</p>
+								<div class="hero__blur"></div>
+							</div>
+							<button class="hero__button hero__button--mob button js-button">оставить заявку</button>
+						
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="hero__items">
+				<div class="hero__item">
+					<div class="hero__other hero__other--education">
+						<div class="hero__text-wrapper">
+							<p class="hero__other-title">Образование</p>
+							<p class="hero__other-text">Пройдено более
+								10 проф.курсов</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hero__item">
+					<div class="hero__other hero__other--experience">
+						<div class="hero__text-wrapper">
+							<p class="hero__other-title">Опыт</p>
+							<p class="hero__other-text">10 лет опыта работы</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hero__item">
+					<div class="hero__other hero__other--comment">
+						<div class="hero__text-wrapper">
+							<p class="hero__other-title">Отзывы</p>
+							<p class="hero__other-text">1000+ довольных клиентов</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</section>
+
+<section class="help" id="help">
+	<div class="container">
+		<h2 class="help__title title-all">Вам нужна моя помощь если у вас:</h2>
+		<div class="help__wrapper">
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Стержневые мозоли, натоптыши</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text"><span class="help__show">Образование данного вида мозоли
+						не имеет связи с полом и встречается
+						одинаково часто как у мужчин,
+						так и у женщин.</span>
+						<span class="help__hidden">День за днем на коже формируется уплотнение, утолщение верхнего слоя, развивается гиперкератоз, который в народе нередко называют натоптышем. В принципе, с натоптышами можно жить годами, не обращая на них особого внимания. В редких случаях вокруг мозоли может начать формироваться воспаление, самым тяжелым последствием которого является некроз.
+Если на ногах имеется сухой мозоль, лучше обратиться к подологу. Ни в коем случае нельзя грубо нарушать целостность кожного покрова, срезать нарост лезвием и т. п. Более того, эти меры могут оказаться неэффективными по отношению к стержневой мозоли. Все дело в том, что под толщей кератоза образуется хрящеподобный конус. Его верхушка упирается в глубокие слои дермы. Такая сердцевина передавливает сосуды, ухудшает питание кожи, в результате чего конус еще больше разрастается. Даже если человек удалит верхний ороговевший слой, сердцевина все равно останется.
+Если вовремя не избавится от них, то корень стержневой мозоли может углубиться до надкосницы.
+					<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span>
+					</p>
+				</div>
+				<div class="help__more js-show">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Болезненные трещины</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text"><span class="help__show">Прежде всего они опасны, тем,
+						что являются «входными воротами»
+						для проникновения болезнетворных
+						микроорганизмов.</span>
+						
+						<span class="help__hidden">
+						 Если Вы занимаетесь самолечением, будьте осторожны, так как повышается риск инфицирования и воспаления, поскольку в местах  растрескивания образуется открытая рана.
+ У специалиста, снятие огрубевшей кожи выполняется очень аккуратно, чтобы в процессе не задеть здоровые слои дермы. Чтобы процесс заживления прошел быстрее, необходимо истончить края трещины. Если процедура проведена правильно, то жесткий роговой слой удаляется без повреждения мягких тканей.
+							<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span></p>
+				</div>
+				<a class="help__more js-show" href="#">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+			</div>
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Бородавки</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text"><span class="help__show">
+						Часто клиенты не могут понять бородавка у них появилась или мозоль. Только грамотный специалист может это определить и направить к дерматологу или дерматологу - онкологу.</span>
+						<span class="help__hidden"> ВПЧ подвержены и мужчины, и женщины.У мужчин бородавки появляются только в случае резкого снижения иммунитета, что с сильным полом случается не так часто.
+Бородавки – распространенное явление у детей и подростков, поскольку их иммунитет не сформирован до конца, вследствие чего они легко заражаются папилломавирусами. Немаловажную роль играет тот факт, что дети, посещающие детские сады и школы, как правило, пребывают в повышенных стрессовых условиях, что негативно сказывается на защитных способностях организма. Помимо контактно-бытового способа инфицирования. возможно также внутриутробное заражение от матери.
+Лучшей профилактикой возникновения бородавок является банальное соблюдение правил личной гигиены: своевременное мытье рук, использование личных маникюрных принадлежностей, полотенец, мочалок, обуви. Не следует ходить босиком в бассейне, общих душевых, банях и саунах. Также при остановке в гостиницах стоит захватить с собой антисептические средства для обработки санузлов. Параллельно необходимо укреплять иммунитет и заботиться об общем состоянии здоровья.
+					<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span>
+					</p>
+				</div>
+				<div class="help__more js-show">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+			
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Диабетическая стопа</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text">
+						<span class="help__show">Основная задача— обеспечить целостность кожи, предотвратить трещины, надрывы кожи на стопе, куда может попасть инфекция и вызвать воспаление.
+							</span>
+						<span class="help__hidden">Для этого нужно правильно ухаживать за кожей, в том числе за огрубевшей кожей, за ногтями, максимально разгрузить стопы. Любая рана на стопе у человека с сахарным диабетом – это, в перспективе, язва.
+					<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span>
+					</p>
+				</div>
+				<div class="help__more js-show">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Вросшие ногти (онихокриптоз)</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text">
+						<span class="help__show">Основная причина развития онихокриптоза — именно неумение обращаться с маникюрными ножницами и неаккуратность при обрезании ногтей.
+						</span>
+						<span class="help__hidden">Можно случайно срезать уголок, оставить острый край, потереть краем ножниц кожу вокруг, подстричь ноготь слишком коротко. Все это опасно и в большинстве случаев провоцирует врастание.Ногтевая пластина не растёт в ширину, и врастание ногтя возникает исключительно из-за воспаления околоногтевого валика. В процессе развития болезни мягкие ткани околоногтевого валика травмируются об острый край ногтевой пластины. Начинается воспалительный процесс с отёком мягких тканей, из-за которого они ещё больше вдавливаются в ноготь. В результате постоянной травматизации начинает разрастаться грануляционная ткань (довольно мягкая и пористая). Постепенно отёк и воспаление нарастают, всё больше причиняя дискомфорт. Присоединяется грибковая и бактериальная среда, возникает изменение цвета пораженного околоногтевого валика, локальное повышение температуры и выделение гноя. Носить привычную обувь становится практически невозможно, попытки опереться на больной палец вызывают острую боль. Далее воспалительный процесс приобретает хроническое течение, грануляционная ткань уплотняется, ногтевая пластинка деформируется, и воспаление может распространиться на костную ткань
+    Онихолизис характеризуется отделением ногтевой пластинки от ногтевого ложа со свободного края в дистальном или боковых отделах. Визуально происходит смена окраски ногтя с телесной на белесовато-серую, что обусловлено попаданием воздуха в подногтевой промежуток, что является «входными воротами» для попадания  микробов, окраска ногтя меняется. Бактерии заставляют ноготь желтеть, грибы придают коричневатый оттенок, синегнойная инфекция – зеленоватый. При микробном поражении изменяется и консистенция ногтевой пластинки, она становится шероховатой, начинает деформироваться. В пространстве между ногтем и ногтевым ложем скапливаются грязь и кератин, образуется подногтевой гиперкератоз с неприятным запахом. Возможно формирование очагов вторичной инфекции.
+Убрать онихолизис и почистить ногтевое ложе, лучше у мастера аппаратного педикюра или подололга.
+					<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span>
+					</p>
+				</div>
+				<div class="help__more js-show">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+			<div class="help__item">
+				<div class="help__box">
+					<div class="help__title-inner">
+						<h3 class="help__item-title">Грибковые заболевания ногтей</h3>
+						<div class="help__title-shadow"></div>
+					</div>
+					<p class="help__item-text">
+						<span class="help__show">Споры грибков способны попасть на нашу кожу и в подкожную клетчатку разными способами – через слизистую оболочку глаз или рта, верхних дыхательных путей, через различные микротравмы, раны, трещины, опрелости, язвочки.</span>
+						<span class="help__hidden"> По данным российских дерматологов, микозами стоп болеют 10-20 % взрослого населения, у мужчин болезнь встречается в 2 раза чаще, чем у женщин, у пожилых людей чаще, чем у молодых. В возрасте старше 70 лет микоз стоп регистрируется у каждого второго пациента, что связано с увеличением сопутствующих метаболических и сосудистых изменений. Всё чаще микозы стоп выявляют у детей.Если Вы заметили, что Ваши ногтевые пластины видоизменились, пожелтели, стали рыхлыми , сухими, обращайтесь к нам за помощью. При микозе необходимо почистить ногтевые пластины, удалить всю их нестабильную часть, чтобы лекарственный препарат проникал глубже.Причины появления микозаСпоры грибков способны попасть на нашу кожу и в подкожную клетчатку разными способами – через слизистую оболочку глаз или рта, верхних дыхательных путей, через различные микротравмы, раны, трещины, опрелости, язвочки.По экспертным оценкам 15–30% всего населения земного шара страдают от грибковых заболеваний.Одним из факторов, провоцирующих развитие микоза, является иммунодефицит – снижение защитных сил организма. Микозы способны поражать различные участки кожи (стоп, ног, кистей, рук, головы, туловища) и ее придатки (волосы, ногти), наружные половые органы, слизистые оболочки, легкие, пищевод. Длительность инкубационного периода зависит от вида возбудителя.
+					<span class="help__more help__more--hidden js-hidden">скрыть
+						<svg class="help__more-svg help__more-svg--hidden" width="7" height="5" viewBox="0 0 7 5" fill="none"
+						     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg></span>
+					</span>
+					</p>
+				</div>
+				<div class="help__more js-show">Подробнее
+					<svg class="help__more-svg" width="7" height="5" viewBox="0 0 7 5" fill="none"
+					     xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 1.125L3.5 3.875L6.25 1.125" stroke="#D2D2D2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service" id="services">
+	<div class="service__container-mob container">
+		<div class="service__wrapper">
+			
+			<div class="service__title-item">
+				<h2 class="service__title">Услуги</h2>
+				<div class="service__box service__box--tabs">
+					<ul class="service__list">
+						<li class="service__items service__items--active js-tab-trigger" data-tab="1">Аппаратный педикюр</li>
+						<li class="service__items  js-tab-trigger" data-tab="2">Обработка пальцев ног</li>
+						<li class="service__items  js-tab-trigger" data-tab="3">Коррекция роста ногтя</li>
+						<li class="service__items  js-tab-trigger" data-tab="4">Обработка проблемных зон</li>
+						<li class="service__items  js-tab-trigger" data-tab="5">Тайский массаж стоп</li>
+						<li class="service__items  js-tab-trigger" data-tab="6">Спа процедуры для ног</li>
+					</ul>
+					<a class="service__price" href="#" download>Скачать полный прайс</a>
+				</div>
+			</div>
+			
+			<div class="service__box service__box--favours service__box--active js-tab-content" data-tab="1">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Аппаратный педикюр</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Гигиенический аппаратный педикюр</span><span
+									class="service__points-price">2000 р.</span></li>
+							<li class="service__points-items"><span class="service__points-left">Гигиенический аппаратный педикюр, плюс покрытие гель-лак</span><span
+									class="service__points-price">2500 р.</span></li>
+							<li class="service__points-items"><span class="service__points-left">Аппаратный педикюр, обработка проблемных стоп ( микоз стопы и
+ногтей, утолщенные ногтевые пластины и онихогрифоз, болезненные
+мозоли и натоптыши, глубокие трещины</span><span
+									class="service__points-price">3000 р.</span></li>
+						</ul>
+<!--						<div class="service__more-wrapper">-->
+<!--							<a class="service__more" href="#">Показать больше</a>-->
+<!--							<svg class="service__more-svg">-->
+<!--								<use xlink:href="img/set.svg#more-arrow"></use>-->
+<!--							</svg>-->
+<!--						</div>-->
+					</div>
+					<div class="service__button-wrapper">
+						<button class="service__button button js-button">записаться</button>
+						<div class="service__time-wrapper">
+							<p class="service__job">Время работы:</p>
+							<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service__box service__box--favours js-tab-content" data-tab="2">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Обработка пальцев ног</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Обработка только пальцев ног</span><span
+									class="service__points-price">1700 р.</span></li>
+							<li class="service__points-items"><span class="service__points-left">Обработка только пальцев ног с покрытием гель-лак</span><span
+									class="service__points-price">2000 р.</span></li>
+							<li class="service__points-items"><span class="service__points-left">Снятие полимерного покрытия</span><span
+									class="service__points-price">200 р.</span></li>
+						</ul>
+<!--						<a class="service__more" href="#">Показать больше</a>-->
+					</div>
+					<div class="service__button-wrapper">
+						<button class="service__button button js-button">записаться</button>
+						<div class="service__time-wrapper">
+							<p class="service__job">Время работы:</p>
+							<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service__box service__box--favours js-tab-content" data-tab="3">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Коррекция роста ногтя</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Коррекция роста ногтевой пластины большого пальца ноги</span><span
+									class="service__points-price">2500 р.</span></li>
+							<li class="service__points-items"><span class="service__points-left">Обработка ногтя большого пальца ноги при утолщении или другой
+деформации</span><span
+									class="service__points-price">1000 р.</span></li>
+						</ul>
+<!--						<div class="service__more-wrapper">-->
+<!--							<a class="service__more" href="#">Показать больше</a>-->
+<!--							<svg>-->
+<!--								<use xlink:href="img/set.svg#more-arrow"></use>-->
+<!--							</svg>-->
+<!--						</div>-->
+					</div>
+					<div class="service__button-wrapper">
+						<button class="service__button button js-button">записаться</button>
+						<div class="service__time-wrapper">
+							<p class="service__job">Время работы:</p>
+							<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service__box service__box--favours js-tab-content" data-tab="4">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Обработка проблемных зон</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Обработка мозоли, натоптыша, другой проблемной зоны</span><span
+									class="service__points-price">500 р.</span></li>
+						</ul>
+<!--						<div class="service__more-wrapper">-->
+<!--							<a class="service__more" href="#">Показать больше</a>-->
+<!--							<svg class="service__more-svg">-->
+<!--								<use xlink:href="img/set.svg#more-arrow"></use>-->
+<!--							</svg>-->
+<!--						</div>-->
+						<div class="service__button-wrapper">
+							<button class="service__button button js-button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+			</div>
+			<div class="service__box service__box--favours js-tab-content" data-tab="5">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Тайский массаж стоп</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Тайский, рефлекторный массаж стопы</span><span
+									class="service__points-price">2000 р.</span></li>
+						
+						</ul>
+						<!--							<a class="service__more" href="#">Показать больше</a>-->
+					</div>
+					<div class="service__button-wrapper">
+						<button class="service__button button js-button">записаться</button>
+						<div class="service__time-wrapper">
+							<p class="service__job">Время работы:</p>
+							<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service__box service__box--favours js-tab-content" data-tab="6">
+				<div class="service__box-img">
+					<img class="service__img"  src="img/service.jpg" alt="Фото">
+				</div>
+				<div class="service__box-description">
+					<h3 class="service__box-title">Спа процедуры для ног</h3>
+					<div class="service__points">
+						<ul class="service__points-list">
+							<li class="service__points-items"><span
+									class="service__points-left">Спа процедура для стоп</span><span
+									class="service__points-price">1000 р.</span></li>
+						</ul>
+<!--						<div class="service__more-wrapper">-->
+<!--							<a class="service__more" href="#">Показать больше</a>-->
+<!--							<svg>-->
+<!--								<use xlink:href="img/set.svg#more-arrow"></use>-->
+<!--							</svg>-->
+<!--						</div>-->
+					</div>
+					<div class="service__button-wrapper">
+						<button class="service__button button js-button">записаться</button>
+						<div class="service__time-wrapper">
+							<p class="service__job">Время работы:</p>
+							<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="service__wrapper-mob">
+			<h2 class="service__title">Услуги</h2>
+			<div class="service__mob-container">
+				<div class="service__mob-box-top">
+					<div class="service__mob-box service__mob-box--active js-tab-trigger" data-tab="1">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider">Аппаратный педикюр</div>
+					</div>
+					<div class="service__mob-box js-tab-trigger" data-tab="2">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider">Обработка пальцев ног</div>
+					</div>
+					<div class="service__mob-box js-tab-trigger" data-tab="3">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider">Коррекция роста ногтя</div>
+					</div>
+					<div class="service__mob-box js-tab-trigger" data-tab="4">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider js-tab-trigger" data-tab="4">Обработка проблемных <br> зон</div>
+					</div>
+					<div class="service__mob-box">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider js-tab-trigger" data-tab="5">Тайский массаж стоп</div>
+					</div>
+					<div class="service__mob-box">
+						<div class="service__mob-img">
+							<img class="service__mob-picture"  src="img/mob-service.jpg" alt="Фото-мобильное">
+						</div>
+						<div class="service__mob-provider js-tab-trigger" data-tab="6">Спа процедуры для ног</div>
+					</div>
+					
+				</div>
+				<div class="service__mob-box-bottom">
+					<div class="service__box-description service__box-description--active js-tab-content" data-tab="1">
+						<h3 class="service__box-title">Аппаратный педикюр</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Гигиенический аппаратный педикюр</span><span
+										class="service__points-price">2000 р.</span></li>
+								<li class="service__points-items"><span class="service__points-left">Гигиенический аппаратный педикюр, плюс покрытие гель-лак</span><span
+										class="service__points-price">2500 р.</span></li>
+								<li class="service__points-items"><span class="service__points-left">Аппаратный педикюр, обработка проблемных стоп ( микоз стопы и
+ногтей, утолщенные ногтевые пластины и онихогрифоз, болезненные
+мозоли и натоптыши, глубокие трещины</span><span
+										class="service__points-price">3000 р.</span></li>
+							</ul>
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="service__box-description js-tab-content" data-tab="2">
+						<h3 class="service__box-title">Обработка пальцев ног</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Обработка только пальцев ног</span><span
+										class="service__points-price">1700 р.</span></li>
+								<li class="service__points-items"><span class="service__points-left">Обработка только пальцев ног с покрытием гель-лак</span><span
+										class="service__points-price">2000 р.</span></li>
+								<li class="service__points-items"><span class="service__points-left">Снятие полимерного покрытия</span><span
+										class="service__points-price">200 р.</span></li>
+							</ul>
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="service__box-description js-tab-content" data-tab="3">
+						<h3 class="service__box-title">Коррекция роста ногтя</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Коррекция роста ногтевой пластины большого пальца ноги</span><span
+										class="service__points-price">2500 р.</span></li>
+							</ul>
+<!--							<a class="service__more" href="#">Показать больше</a>-->
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button js-button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="service__box-description js-tab-content" data-tab="4">
+						<h3 class="service__box-title">Обработка проблемных зон</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Обработка мозоли, натоптыша, другой проблемной зоны</span><span
+										class="service__points-price">от 500р.</span></li>
+								<li class="service__points-items"><span class="service__points-left">Обработка ногтя большого пальца ноги при утолщении или другой
+деформации</span><span
+										class="service__points-price">от 1000 р.</span></li>
+							</ul>
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="service__box-description js-tab-content" data-tab="5">
+						<h3 class="service__box-title">Тайский массаж стоп</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Тайский, рефлекторный массаж стопы</span><span
+										class="service__points-price">2000 р.</span></li>
+							</ul>
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="service__box-description js-tab-content" data-tab="6">
+						<h3 class="service__box-title">Спа процедуры для ног</h3>
+						<div class="service__points">
+							<ul class="service__points-list">
+								<li class="service__points-items"><span
+										class="service__points-left">Спа процедура для стоп</span><span
+										class="service__points-price">1000 р.</span></li>
+							</ul>
+						</div>
+						<div class="service__button-wrapper">
+							<button class="service__button button">записаться</button>
+							<div class="service__time-wrapper">
+								<p class="service__job">Время работы:</p>
+								<p class="service__time">Пн - Пт с 8:00 - 21:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="work" id="advantages">
+	<div class="work__back">
+		<div class="container">
+			<div class="work__wrapper">
+				<h2 class="work__title">Посмотрите как я работаю</h2>
+				<div class="work__box">
+					<div class="work__items">
+						<div class="work__img work__img--line">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#individual"></use>
+							</svg>
+						
+						</div>
+						<div class="work__text">Индивидуальный подход
+							к каждому клиенту
+						</div>
+					</div>
+					<div class="work__items">
+						<div class="work__img work__img--line">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#privacy"></use>
+							</svg>
+						</div>
+						<div class="work__text">Обеспечение полной конфиденциальности процедуры</div>
+					</div>
+					<div class="work__items">
+						<div class="work__img">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#car"></use>
+							</svg>
+						</div>
+						<div class="work__text">В случае надобности <br>
+							работаю на выезд
+						</div>
+					</div>
+					<div class="work__items">
+						<div class="work__img work__img--line">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#diabetic"></use>
+							</svg>
+						</div>
+						<div class="work__text">Работаю с проблемами деабетической стопы</div>
+					</div>
+					<div class="work__items">
+						<div class="work__img work__img--line">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#sterile"></use>
+							</svg>
+						</div>
+						<div class="work__text">Всегда стерильные инструменты и чистое рабочее место</div>
+					</div>
+					<div class="work__items">
+						<div class="work__img">
+							<svg class="work__svg">
+								<use xlink:href="img/set.svg#consultations"></use>
+							</svg>
+						</div>
+						<div class="work__text">Предоставляю индивидуальные консультации для клиентов</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="results" id="results">
+	<div class="results__container">
+		<div class="results__wrapper">
+			
+			
+			<div class="results__big swiper swiperJs-legs-big">
+				
+				<div class="results__swiper-wrapper-big swiper-wrapper">
+					<div class="results-slide swiper-slide">
+						<div class="results__twentytwenty-container twentytwenty-container">
+							<img class="results__before"  src="img/problem/example.jpg" alt="До">
+							<img class="results__after"  src="img/problem/example2.jpg" alt="После">
+						</div>
+					</div>
+					
+					<div class="results-slide swiper-slide">
+						<div class="results__twentytwenty-container twentytwenty-container">
+							<img class="results__before"  src="img/before-after/mikoz-before.jpg" alt="До">
+							<img class="results__after"  src="img/before-after/mikoz-after.jpg" alt="После">
+						</div>
+					</div>
+				
+					<div class="results-slide swiper-slide">
+						<div class="results__twentytwenty-container twentytwenty-container">
+							<img class="results__before"  src="img/before-after/cracks-before.jpg" alt="До">
+							<img class="results__after"  src="img/before-after/cracks-after.jpg" alt="После">
+						</div>
+					</div>
+				
+				</div>
+				<div class="results__slider-controls slider-controls">
+					<div class="results__prev slider-controls__arrow slider-controls__prev">
+						<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="img/set.svg#arrow-slider"></use>
+						</svg>
+					</div>
+					<div class="results__pagination slider-controls__pagination"></div>
+					<div class="results__next slider-controls__arrow slider-controls__next">
+						<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="img/set.svg#arrow-slider"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!-- Slider main container -->
+			<div class="results__min swiper swiperJs-legs-min">
+				<div class="results__text-block">
+					<h2 class="results__title">Результаты моих клиентов</h2>
+					<p class="results__text">Смотрите больше в моей группе <a class="results__link" href="#">VK</a></p>
+				</div>
+				
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="results-slide-min swiper-slide">
+						<div class="results__twentytwenty-container-min twentytwenty-container">
+							<img class="results__before-min"  src="img/problem/example.jpg" alt="До">
+							<img class="results__after-min"  src="img/problem/example2.jpg" alt="После">
+						</div>
+					</div>
+					<div class="results-slide-min swiper-slide">
+						<div class="results__twentytwenty-container-min twentytwenty-container">
+							<img class="results__before-min"  src="img/before-after/mikoz-before.jpg" alt="До">
+							<img class="results__after-min"  src="img/before-after/mikoz-after.jpg" alt="После">
+						</div>
+					</div>
+					<div class="results-slide-min swiper-slide">
+						<div class="results__twentytwenty-container-min twentytwenty-container">
+							<img class="results__before-min"  src="img/before-after/cracks-before.jpg" alt="До">
+							<img class="results__after-min"  src="img/before-after/cracks-after.jpg" alt="После">
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	
+	
+	</div>
+</section>
+
+
+<section class="reviews" id="reviews">
+	<div class="reviews__container">
+		<div class="container">
+			<h2 class="reviews__title">Отзывы</h2>
+		</div>
+		<div class="reviews__swiper swiper reviewsSwiper">
+			<div class="reviews__swiper-wrapper swiper-wrapper">
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__slide swiper-slide">
+					<div class="review">
+						<div class="review__wrapper">
+							<div class="review__box review__box--left">
+								<div class="review__photo">
+									<img class="photo"  src="img/test-face.jpg" alt="Фото">
+								</div>
+								<div class="review__social-wrapper">
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__vk">
+											<use xlink:href="img/set.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="reviews__social-link" href="#">
+										<svg class="review__social reviews__whatsapp">
+											<use xlink:href="img/set.svg#whatsapp"></use>
+										</svg>
+									</a>
+								
+								</div>
+							</div>
+							<div class="review__box review__box--right">
+								<div class="review__item">
+									<h3 class="review__name">Имя Фамилия</h3>
+									<div class="review__stars-wrapper">
+										<span class="review__rate">4.5</span>
+										<div class="reviews__stars-wrapper">
+										
+										</div>
+									</div>
+									<p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+										amet luctus venenatis, lectus magna fringilla lectus magna fringilla</p>
+								</div>
+								<a class="review__link" href="">Смотреть отзыв в яндекс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="reviews__slider-controls slider-controls">
+				<button class="reviews__button button">написать отзыв</button>
+	<div class="reviews__controls-box">
+		<div class="reviews__prev slider-controls__arrow slider-controls__prev">
+			<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="img/set.svg#arrow-slider"></use>
+			</svg>
+		</div>
+		<div class="reviews__pagination slider-controls__pagination"></div>
+		<div class="reviews__next slider-controls__arrow slider-controls__next">
+			<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="img/set.svg#arrow-slider"></use>
+			</svg>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="about" id="about">
+	<div class="container about__container">
+		<div class="about__wrapper">
+			<div class="about__box about__box--text">
+				<h2 class="about__title">Обо мне</h2>
+				<p class="about__text">Опыт работы — 10 лет, закончила курсы мастер аппаратного педикюра в учебном центре
+					Пластэк ,
+					в городе Спб. Продолжаю обучаться на различных профессиональных курсах.</p>
+				<ul class="about__list">
+					<li class="about__items">2016-2018 Курс по повышению квалификации</li>
+					<li class="about__items">2018-2019 Курс по повышению квалификации</li>
+					<li class="about__items">2019-2022 Курс по повышению квалификации</li>
+				</ul>
+				<div class="about__courses">
+					<div class="about__count">
+						<span class="about__count-numbers-top">10</span>
+						<span class="about__count-numbers-bottom">Лет опыта работы</span>
+					</div>
+					<div class="about__count">
+						<span class="about__count-numbers-top">100</span>
+						<span class="about__count-numbers-bottom">Курсов повышения квалификации</span>
+					</div>
+					<div class="about__count">
+						<span class="about__count-numbers-top">1000+</span>
+						<span class="about__count-numbers-bottom">Довольных и здоровых клиентов</span>
+					</div>
+				</div>
+			
+			
+			</div>
+			
+			<div class="about__box about__box--certificate">
+				<div class="about__certificate">
+					<!-- Slider main container -->
+					<div class="about__swiper js-about">
+						<!-- Additional required wrapper -->
+						<div class="about__swiper-wrapper swiper-wrapper">
+							<!-- Slides -->
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/1.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/1.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/2.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/2.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/3.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/3.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/4.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/4.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/5.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/5.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/6.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/6.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/7.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/7.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/8.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/8.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/9.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/9.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/10.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/10.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/11.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/11.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/12.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/12.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/13.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/13.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/14.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/14.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/15.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/15.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/16.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/16.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/17.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/17.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/18.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/18.jpg" alt="фото">
+							</a></div>
+							<div class="about__slide swiper-slide"><a class="about__link" href="img/sertificat/19.jpg"
+							                                          data-fancybox="photo" data-caption="Фото">
+								<img class="photo__img"  src="img/sertificat/19.jpg" alt="фото">
+							</a></div>
+						
+						</div>
+						<!-- If we need pagination -->
+						<div class="about-pagination"></div>
+					
+					
+					</div>
+				</div>
+			</div>
+			<!-- If we need navigation buttons -->
+		
+		</div>
+		<div class="about__slider-controls slider-controls">
+			<div class="about__prev slider-controls__arrow slider-controls__prev swiper-button-disabled" tabindex="-1"
+			     role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-59aff97cb86d2acb"
+			     aria-disabled="true">
+				<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="img/set.svg#arrow-slider"></use>
+				</svg>
+			</div>
+			<div
+					class="about__pagination slider-controls__pagination swiper-pagination-fraction swiper-pagination-horizontal">
+				<span class="swiper-pagination-current">1</span>/<span class="swiper-pagination-total">8</span></div>
+			<div class="about__next slider-controls__arrow slider-controls__next" tabindex="0" role="button"
+			     aria-label="Next slide" aria-controls="swiper-wrapper-59aff97cb86d2acb" aria-disabled="false">
+				<svg class="slider-controls__arrow-svg" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="img/set.svg#arrow-slider"></use>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="problem" id="questions">
+<div class="problem__box">
+	<div class="container">
+		<div class="problem__container">
+			<h2 class="problem__title">Частые вопросы подологу</h2>
+			<div class="problem__wrapper">
+				<div class="problem__item problem__item--left">
+					<div class="problem__quest-wrapper">
+						<div class="problem__quest">
+							<p class="problem__quest-text">Как часто надо спиливать ногти при онихомикозе? Достаточно ли одного
+								раза?</p>
+							<svg class="problem__plus js-problemOpen">
+								<use xlink:href="img/set.svg#plus"></use>
+							</svg>
+						</div>
+						<p class="problem__answer">Чистку ногтевой пластины при онихомикозе необходимо делать один раз в три недели,
+							пока не отрастет здоровый ноготь.</p>
+					</div>
+					<div class="problem__quest-wrapper">
+						<div class="problem__quest">
+							<p class="problem__quest-text">Можно ли вылечить грибок ногтей только наружными средствами.</p>
+							<svg class="problem__plus js-problemOpen">
+								<use xlink:href="img/set.svg#plus"></use>
+							</svg>
+						</div>
+						<p class="problem__answer">Как правило, если поражение грибком составляет более 1\3 ногтевых пластин, то
+							лечение только наружными средствами не поможет. Необходимо сдать анализы и по их результатам доктор
+							назначит правильное лечение системными препаратами.</p>
+					</div>
+					<div class="problem__quest-wrapper">
+						<div class="problem__quest">
+							<p class="problem__quest-text">Как часто надо делать педикюр?</p>
+							<svg class="problem__plus js-problemOpen">
+								<use xlink:href="img/set.svg#plus"></use>
+							</svg>
+						</div>
+						<p class="problem__answer">Обычно педикюр рекомендуем делать один раз в месяц – полтора.</p>
+					</div>
+					<div class="problem__quest-wrapper">
+						<div class="problem__quest">
+							<p class="problem__quest-text">Почему врастают ногти?</p>
+							<svg class="problem__plus js-problemOpen">
+								<use xlink:href="img/set.svg#plus"></use>
+							</svg>
+						</div>
+						<p class="problem__answer">Ногти врастают по ряду причин:<br>
+							- неправильный уход ( глубоко выстригают углы)<br>
+							- ношение узкой, неудобной обуви<br>
+							- лишний набор веса тела<br>
+							- при потливости ног (гипергидроз)<br>
+							- после удаления ногтевой пластиты или механического воздействия</p>
+					</div>
+					<div class="problem__quest-wrapper">
+						<div class="problem__quest">
+							<p class="problem__quest-text">Что делать, если образовалась пустота под ногтем?</p>
+							<svg class="problem__plus js-problemOpen">
+								<use xlink:href="img/set.svg#plus"></use>
+							</svg>
+						</div>
+						<p class="problem__answer">Если ногтевая пластина отделилась от ногтевого ложа ( онихолизис), лучше удалить
+							всю нестабильную ее часть, чтобы избежать присоединения патогенной микрофлоры.</p>
+					</div>
+				</div>
+				<div class="problem__item">
+					<h3 class="problem__item-title">Задать вопрос</h3>
+					<form class="problem__form" action="#" method="post">
+						<div class="problem__form-wrapper">
+							<input type="hidden" name="empty" value="">
+							<div class="problem__form-info">
+								<div class="problem__contact-wrapper">
+									<label class="problem__label">
+										<input class="problem__input problem__input--name problem__input--left" type="text"
+										       placeholder="Имя">
+									</label>
+									<label class="problem__label">
+										<input class="problem__input problem__input--name problem__input--right" type="email"
+										       placeholder="Почта">
+									</label>
+								</div>
+							</div>
+							<label class="problem__label-textarea"><textarea class="problem__textarea"></textarea></label>
+						</div>
+						<div class="problem__checkbox-wrapper">
+							<input class="problem__checkbox-input" id="form-checkbox" type="checkbox">
+							<label class="problem__checkbox-label" for="form-checkbox"></label>
+							<a class="problem__checkbox-pol" href="#"> Даю согласие на обработку персональных данных</a>
+						</div>
+						<button class="problem__form-button button">отправить</button>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="map" id="contacts">
+	<div class="map__wrapper">
+		<div class="modal modal--map">
+			<div class="modal__body modal__body--map">
+				<h3 class="modal__title-map">Оставить заявку</h3>
+				<form action="" class="modal__form"><label class="modal__label">
+					<input type="hidden">
+					<input class="modal__input" type="text" placeholder="Имя"></label>
+					<label class="modal__label"><input type="text" class="modal__input" placeholder="Номер"></label>
+					<input class="modal__checkbox" id="modal__checkbox" type="checkbox">
+					<label class="modal__label-checkbox" for="modal__checkbox">Даю согласие на обработку&nbsp;<a
+							class="modal__personal" href="#"> персональных данных</a></label>
+					<button class="modal__button button" type="submit">оставить заявку</button>
+				</form>
+				
+				<div class="modal__socials">
+					<a class="modal__svg-wrapper" href="#">
+						<svg class="modal__svg">
+							<use xlink:href="img/set.svg#vk"></use>
+						</svg>
+					</a>
+					<a class="modal__svg-wrapper" href="#">
+						<svg class="modal__svg">
+							<use xlink:href="img/set.svg#whatsapp"></use>
+						</svg>
+					</a>
+					<a class="modal__svg-wrapper" href="mailto:">
+						<svg class="modal__svg">
+							<use xlink:href="img/set.svg#mail"></use>
+						</svg>
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<a class="footer__logo-wrapper" href="#">
+				<svg class="footer__logo">
+					<use xlink:href="img/set.svg#logo"></use>
+				</svg>
+				<p class="footer__text">Студия Ольги Жариковой</p>
+			</a>
+			
+			<nav class="footer__nav">
+				<div class="footer__nav-box footer__nav-box--first">
+					<h3 class="footer__nav-title">Навигация</h3>
+					<ul class="footer__list scrollto">
+						<li class="footer__items"><a class="footer__link" href="#main">Главная</a></li>
+						<li class="footer__items"><a class="footer__link" href="#help">Почему я</a></li>
+						<li class="footer__items"><a class="footer__link" href="#results">Результаты</a></li>
+						<li class="footer__items"><a class="footer__link" href="#reviews">Отзывы</a></li>
+						<li class="footer__items"><a class="footer__link" href="#about">Обо мне</a></li>
+						<li class="footer__items"><a class="footer__link" href="#contacts">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-box footer__nav-box--second">
+					<h3 class="footer__nav-title">Услуги</h3>
+					<ul class="footer__list">
+						<li class="footer__items"><a class="footer__link" href="#">Аппаратный педикюр</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Обработка пальцев ног</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Коррекция роста ногтя</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Обработка проблемных зон</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Тайский массаж стоп</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Спа процедуры для ног</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-box footer__nav-box--third">
+					<h3 class="footer__nav-title">Частые вопросы</h3>
+					<ul class="footer__list">
+						<li class="footer__items"><a class="footer__link" href="#">Аппаратный педикюр</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Обработка пальцев ног</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Коррекция роста ногтя</a></li>
+						<li class="footer__items"><a class="footer__link" href="#">Обработка проблемных зон</a></li>
+					</ul>
+					<a class="footer__politic" href="#">Политика конфеденциальности</a>
+				</div>
+			</nav>
+			
+			
+			<div class="footer__contact">
+				<p class="footer__time-text">Время работы:</p>
+				<div class="footer__time">Пн - Пт с 8:00 - 21:00</div>
+				<a class="footer__tel" href="tel:+78008009999">+7 (800) 800-99-99</a>
+				<a class="footer__mail" href="mailto:example@mail.ru">example@mail.ru</a>
+				<div class="footer__social--wrapper">
+					<a class="footer__svg-wrapper" href="#">
+						<svg class="footer__svg">
+							<use xlink:href="img/set.svg#vk"></use>
+						</svg>
+					</a>
+					<a class="footer__svg-wrapper" href="#">
+						<svg class="footer__svg">
+							<use xlink:href="img/set.svg#whatsapp"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer__bottom">
+			<a class="footer__bottom-maker" href="#">
+				<img class="footer__maker-site"  src="img/maker.png" alt="Разработал">
+			</a>
+			<p class="footer__maker-text">&nbsp;- разработка сайтов</p>
+		</div>
+	</div>
+</footer>
+
+<div class="modal js-modal">
+	<div class="modal__body js-modal__body">
+		<h3 class="modal__title">Оставить заявку</h3>
+		<form action="" class="modal__form"><label class="modal__label">
+			<input type="hidden">
+			<input class="modal__input" type="text" placeholder="Имя"></label>
+			<label class="modal__label"><input type="text" class="modal__input" placeholder="Номер"></label>
+			<input class="modal__checkbox" id="modal__checkbox-popup" type="checkbox">
+			<label class="modal__label-checkbox" for="modal__checkbox-popup">Даю согласие на обработку&nbsp;<a
+					class="modal__personal" href="#"> персональных данных</a></label>
+			<button class="modal__button button" type="submit">оставить заявку</button>
+		</form>
+		
+		<div class="modal__socials">
+			<a class="modal__svg-wrapper" href="#">
+				<svg class="modal__svg">
+					<use xlink:href="img/set.svg#vk"></use>
+				</svg>
+			</a>
+			<a class="modal__svg-wrapper" href="#">
+				<svg class="modal__svg">
+					<use xlink:href="img/set.svg#whatsapp"></use>
+				</svg>
+			</a>
+			<a class="modal__svg-wrapper" href="mailto:">
+				<svg class="modal__svg">
+					<use xlink:href="img/set.svg#mail"></use>
+				</svg>
+			</a>
+		</div>
+		
+		<div class="modal__close js-closeModal">
+			<svg class="modal__close-svg">
+				<use xlink:href="img/set.svg#close"></use>
+			</svg>
+		</div>
+	</div>
+</div>
+
+<script src="js/libs/jquery-lib.js"></script>
+<script src="js/libs/swiper-lib.js"></script>
+<script src="js/libs/jquery.event.move.js"></script>
+<script src="js/libs/jquery.twentytwenty.js"></script>
+<script src="js/libs/fancybox.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

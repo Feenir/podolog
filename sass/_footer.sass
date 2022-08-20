@@ -1,0 +1,152 @@
+.footer
+  &__top
+    display: flex
+    padding: 60px 0
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    @media (max-width: 1190px)
+      justify-content: space-between
+    @media (max-width: 768px)
+      flex-wrap: wrap
+    @media (max-width: 374px)
+      gap: 20px
+  &__nav
+    display: flex
+    justify-content: space-between
+    @media (max-width: 1190px)
+      flex-direction: column
+      gap: 20px
+    @media (max-width: 768px)
+      order: 3
+    @media (max-width: 560px)
+      gap: 25px
+  &__logo-wrapper
+    margin-right: 47px
+    @media (max-width: 1190px)
+      margin-right: 0
+    @media (max-width: 768px)
+      order: 1
+      width: 50%
+  &__logo
+    max-height: 46px
+    max-width: 78px
+  &__text
+    font-family: 'TenorSans'
+    font-style: normal
+    font-weight: 400
+    font-size: 10px
+    line-height: 12px
+    letter-spacing: 0.025em
+    color: #495365
+    white-space: nowrap
+
+  &__nav-box
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &--first
+      margin-right: 100px
+      @media (max-width: 1190px)
+        margin-right: 0
+    &--second
+      margin-right: 80px
+      @media (max-width: 1190px)
+        margin-right: 0
+    &--third
+      margin-right: 65px
+      @media (max-width: 1190px)
+        margin-right: 0
+
+  &__nav-title
+    font-size: 16px
+    line-height: 19px
+    color: #495365
+    margin-bottom: 20px
+    font-weight: 400
+    @media (max-width: 768px)
+      margin-bottom: 15px
+
+  &__items
+    white-space: nowrap
+    &:hover .footer__link:before
+      content: ''
+      width: 100%
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  &__link
+    position: relative
+    font-size: 14px
+    line-height: 18px
+    color: #69768C
+    &:before
+      content: ''
+      position: absolute
+      width: 0
+      height: 1px
+      bottom: 0
+      background-color: #00B3CB
+      transition: all .5s
+    &:hover
+      color: #00B3CB
+
+  &__politic
+    font-size: 14px
+    line-height: 17px
+    color: rgba(105, 118, 140, 0.5)
+    white-space: nowrap
+    margin-top: 40px
+    transition: color .5s
+    &:hover
+      color: #363D4A
+
+  &__contact
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    @media (max-width: 768px)
+      order: 2
+    @media (max-width: 374px)
+      align-items: flex-start
+
+  &__time-text
+    font-size: 16px
+    color: #495365
+    margin-bottom: 10px
+  &__time
+    font-size: 14px
+    color: #69768C
+    margin-bottom: 25px
+  &__tel
+    font-size: 16px
+    color: #495365
+    margin-bottom: 10px
+    transition: color .5s
+    &:hover
+      color: #00B3CB
+  &__mail
+    font-size: 14px
+    color: #495365
+    margin-bottom: 15px
+    transition: color .5s
+    &:hover
+      color: #00B3CB
+  &__social--wrapper
+    display: flex
+    align-items: center
+  &__svg
+    max-width: 25px
+    max-height: 25px
+  &__svg-wrapper
+    &:last-child
+      margin-left: 15px
+
+  &__bottom
+    display: flex
+    align-items: center
+    margin-top: 30px
+    margin-bottom: 40px
+
+
+
+
+

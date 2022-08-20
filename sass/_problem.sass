@@ -1,0 +1,182 @@
+.problem
+  background-color: #B9EBF1
+  &__box
+    max-width: 1920px
+    margin: 0 auto
+    background-image: url("../img/quest.svg"), url("../img/quest-right.svg")
+    background-repeat: no-repeat, no-repeat
+    background-position: center left, calc(100% - 48px) 110px
+    background-size: 96px 216px, 68px 152px
+
+  &__container
+    padding: 70px 0 80px 0
+    @media (max-width: 991px)
+      padding: 55px 0 50px 0
+  &__wrapper
+    display: flex
+    gap: 100px
+    @media (max-width: 991px)
+      flex-direction: column
+      gap: 35px
+
+  &__title
+    margin-bottom: 40px
+
+  &__item
+    width: calc(50% - 50px)
+    @media (max-width: 991px)
+      width: 100%
+    &--left
+      display: flex
+      flex-direction: column
+      gap: 15px
+
+  &__quest-wrapper
+    display: flex
+    flex-direction: column
+    background-color: white
+    border-radius: 10px
+    padding: 20px 30px
+
+  &__quest
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__quest-text
+    font-weight: 400
+    font-size: 16px
+    letter-spacing: 0.03em
+    color: #495365
+    @media (max-width: 991px)
+      font-size: 14px
+
+  &__plus
+    max-width: 24px
+    max-height: 24px
+    cursor: pointer
+    &--rotate
+      transform: rotate(45deg)
+
+  &__form-info
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+
+  &__answer
+    display: none
+    padding: 20px 0 0 0
+    font-weight: 400
+    font-size: 16px
+    letter-spacing: 0.03em
+    color: #69768C
+    @media (max-width: 991px)
+      font-size: 14px
+    &--show
+      display: block
+      width: 100%
+
+  &__item-title
+    font-size: 24px
+    letter-spacing: 0.03em
+    color: #2E2E2E
+    margin-bottom: 15px
+
+  &__input
+    &--left
+      border-top-left-radius: 10px
+    &--name
+      padding: 12px 0 2px 0
+      margin-bottom: 13px
+      margin-left: 20px
+      border-bottom: 0.5px solid rgba(73, 83, 101, 0.31)
+
+  &__label-textarea
+    display: flex
+    padding: 0 10px 10px 0
+    background-color: #F9F9F9
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    margin-bottom: 8px
+
+  &__textarea
+    background-color: #F9F9F9
+    width: 100%
+    border: none
+    min-height: 150px
+    padding: 12px 0 12px 20px
+    outline: none
+    resize: vertical
+
+  &__checkbox-wrapper
+    display: flex
+    align-items: center
+
+  &__checkbox-label
+    position: relative
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 10px
+    height: 10px
+    border: 1px solid #A9A9A9
+    border-radius: 2px
+    left: 0
+    cursor: pointer
+    &:hover
+      border-color: #00B3CB
+    &:before
+      position: absolute
+      content: ''
+
+
+
+  &__checkbox-pol
+    font-size: 10px
+    line-height: 12px
+    margin-left: 5px
+    letter-spacing: 0.03em
+    color: #A9A9A9
+
+  &__form-info
+    display: flex
+    align-items: center
+    background-color: white
+
+
+
+  &__checkbox-input
+    position: absolute
+    top: -99px
+    left: -99px
+    width: 1px
+    height: 1px
+    visibility: hidden
+
+  &__input
+    &--name
+      font-size: 12px
+      letter-spacing: 0.03em
+      color: rgba(73, 83, 101, 0.65)
+      &::placeholder
+        font-size: 12px
+        letter-spacing: 0.03em
+        color: rgba(73, 83, 101, 0.65)
+
+  &__textarea
+    font-size: 12px
+    letter-spacing: 0.03em
+    color: rgba(73, 83, 101, 0.65)
+
+  &__form-button
+    margin-top: 20px
+
+.problem__checkbox-input:checked + .problem__checkbox-label
+  border-color: #00B3CB
+
+.problem__checkbox-input:checked + .problem__checkbox-label:before
+  background-color: #00B3CB
+  width: 6px
+  height: 6px
+  border-radius: 1px
+

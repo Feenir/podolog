@@ -1,0 +1,89 @@
+.results
+  &__container
+    max-width: 1920px
+    margin: 0 auto
+    padding: 90px 0 60px 0
+  &__wrapper
+    display: flex
+    gap: 35px
+    padding-left: max(15px, calc((100% - 1080px)/2))
+    @media (max-width: 768px)
+      padding-right: 15px
+
+  &__big
+    min-height: 100%
+    max-width: 520px
+
+  &__min
+    @media (max-width: 991px)
+      display: none
+
+  &__twentytwenty-container
+    min-width: 530px
+
+
+  &__text-block
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__swiper-wrapper-big
+    margin-right: 35px
+
+  &__slider-controls
+    justify-content: flex-end
+    margin-top: 34px
+    @media (max-width: 560px)
+      justify-content: center
+
+  &__title
+    font-size: 36px
+    line-height: 42px
+    letter-spacing: 0.025em
+    color: #0C1A32
+    margin-bottom: 12px
+
+  &__min
+    margin: auto 0 57px 0
+
+  &__text
+    margin-bottom: 35px
+    letter-spacing: 0.03em
+    color: #495365
+    font-size: 16px
+
+  &__twentytwenty-container-min
+    border-radius: 10px
+
+.results__twentytwenty-container-min .twentytwenty-handle
+  display: none
+
+.results__big .twentytwenty-wrapper
+  border-radius: 10px
+  overflow: hidden
+
+.twentytwenty-handle
+  background-color: white !important
+
+.twentytwenty-right-arrow
+  border-left: 6px solid #00B3CB !important
+
+.twentytwenty-left-arrow
+  border-right: 6px solid #00B3CB !important
+
+.results-slide
+  position: relative
+  &:before
+    content: 'До'
+    position: absolute
+    top: 10px
+    left: 25px
+    color: white
+    z-index: 10000
+  &:after
+    content: 'После'
+    position: absolute
+    top: 10px
+    right: 25px
+    color: white
+    z-index: 10000

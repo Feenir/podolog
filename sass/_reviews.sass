@@ -1,0 +1,104 @@
+.reviews
+
+  background-color: #B9EBF1
+  &__container
+    max-width: 1920px
+    margin: 0 auto
+    background-image: url("../img/scissors-reviews.svg"), url("../img/scissors-reviews-right.svg")
+    background-repeat: no-repeat, no-repeat
+    background-position: max(15px,calc((100% - 1080px)/2)) 110%, 92% 13%
+    padding: 90px 0 77px 0
+
+  &__title
+    margin-bottom: 56px
+  &__swiper
+    margin-left: max(15px, calc(100% - 1080px)/2)
+
+  &__slider-controls
+    justify-content: space-between
+    padding-right: max(15px, calc(100% - 1180px))
+    margin-top: 34px
+    @media (max-width: 560px)
+      justify-content: center
+
+  &__controls-box
+    display: flex
+    align-items: center
+
+  &__button
+    @media (max-width: 560px)
+      margin: 0 auto
+
+
+.review
+  &__wrapper
+    display: flex
+    padding: 35px 50px 45px 35px
+    background-color: white
+    border-radius: 10px
+    @media (max-width: 991px)
+      padding: 20px
+    @media (max-width: 560px)
+      margin-right: 15px
+
+
+  &__photo
+    display: flex
+    align-content: center
+    justify-content: center
+    width: 62px
+    max-height: 62px
+    border-radius: 50%
+    overflow: hidden
+    margin-right: 25px
+    margin-bottom: 15px
+
+  &__name
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    letter-spacing: 0.03em
+    color: #2E2E2E
+    margin-bottom: 10px
+
+  &__stars-wrapper
+    margin-bottom: 15px
+  &__rate
+    font-weight: 400
+    font-size: 12px
+    letter-spacing: 0.03em
+    color: #495365
+
+  &__text
+    font-size: 16px
+    letter-spacing: 0.03em
+    color: #495365
+    margin-bottom: 15px
+    line-height: 1.3
+
+  &__link
+    display: flex
+    align-items: center
+    font-weight: 400
+    font-size: 14px
+    letter-spacing: 0.03em
+    color: rgba(73, 83, 101, 0.65)
+    &:after
+      content: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.125 7.5H11.875' stroke='%23495365' stroke-opacity='0.65' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 3.125L11.875 7.5L7.5 11.875' stroke='%23495365' stroke-opacity='0.65' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      margin-left: 5px
+      transform: translateY(1px)
+
+  &__social-wrapper
+    display: flex
+    align-content: center
+    gap: 10px
+    margin-left: 5px
+
+  &__social
+    max-width: 20px
+    max-height: 20px
+
+
+
+.photo
+  object-fit: cover
