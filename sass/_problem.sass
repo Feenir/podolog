@@ -23,13 +23,14 @@
     margin-bottom: 40px
 
   &__item
-    width: calc(50% - 50px)
-    @media (max-width: 991px)
-      width: 100%
     &--left
       display: flex
       flex-direction: column
       gap: 15px
+      max-width: 540px
+      flex: 1 auto
+      @media (max-width: 991px)
+        max-width: unset
 
   &__quest-wrapper
     display: flex
@@ -58,9 +59,11 @@
     &--rotate
       transform: rotate(45deg)
 
-  &__form-info
-    border-top-left-radius: 10px
-    border-top-right-radius: 10px
+  &__form
+    min-width: 346px
+    @media (max-width: 560px)
+      min-width: unset
+
 
   &__answer
     display: none
@@ -85,6 +88,7 @@
     &--left
       border-top-left-radius: 10px
     &--name
+      max-width: 105px
       padding: 12px 0 2px 0
       margin-bottom: 13px
       margin-left: 20px
@@ -142,6 +146,8 @@
     display: flex
     align-items: center
     background-color: white
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
 
 
 
@@ -170,6 +176,12 @@
 
   &__form-button
     margin-top: 20px
+
+  &__personal
+    text-decoration: underline
+
+  &__button-arrow
+    margin-left: 20px
 
 .problem__checkbox-input:checked + .problem__checkbox-label
   border-color: #00B3CB

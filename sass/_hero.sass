@@ -1,22 +1,24 @@
 .hero
   background: url("../img/hero_back.jpg") no-repeat center
   background-size: cover
-  padding-top: 170px
   padding-bottom: 57px
   @media (max-width: 560px)
     padding-bottom: 0
-    padding-top: 150px
+    background-position: left
 
   &__wrapper
     display: flex
     flex-direction: column
     background-image: url("../img/master.png")
-    background-position: right
-    background-size: contain
+    background-position: right bottom
+    background-size: 335px 505px
     background-repeat: no-repeat
-
+    padding-top: 170px
     @media (max-width: 768px)
       background: none
+    @media (max-width: 560px)
+      padding-top: 140px
+      background-size: 305px 460px
   &__master-wrapper
     display: flex
     align-items: flex-end
@@ -85,12 +87,13 @@
     position: relative
   &__blur
     position: absolute
-    filter: blur(40px)
+    filter: blur(10px)
     border-radius: 32px
     background: white
     height: 80px
-    width: 100%
-    bottom: 0
+    width: 110%
+    bottom: -10px
+    left: -10px
   &__master
     font-family: "TenorSans", sans-serif
     position: relative
@@ -192,14 +195,16 @@
       display: block
 
   &__mob-text
+    position: relative
+    left: -100px
     @media (max-width: 768px)
       position: absolute
       top: 610px
+      left: auto
     @media (max-width: 560px)
       top: 570px
     @media (max-width: 535px)
       top: 600px
-
 
 
 

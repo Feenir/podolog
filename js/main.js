@@ -305,6 +305,24 @@ $('.scrollto a').on('click', function() {
 	return false;
 });
 
+// ===============================================
+// 			Показать еще секция помощь
+// ===============================================
+
+$('.js-moreShow').click(function() {
+	$('.help__item--mob-hidden').toggleClass('help__item--mob-show');
+	$('.help__more-button-svg').toggleClass('help__more-button-svg--transform');
+	if (!$(this).data('status')) {
+		$(this).text('Скрыть');
+		$(this).data('status', true);
+	}
+	else {
+		$(this).text('Показать больше');
+		$(this).data('status', false);
+	}
+	
+});
+
 
 
 

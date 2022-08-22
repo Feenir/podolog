@@ -12,7 +12,7 @@
     position: absolute
     background: none
     top: 93px
-    left: min(250px, 5%)
+    left: max(15px,calc((100% - 1080px)/2))
     width: max-content
     height: max-content
     @media (max-width: 560px)
@@ -105,6 +105,7 @@
     line-height: 12px
     letter-spacing: 0.03em
     color: #A9A9A9
+    text-decoration: underline
 
   &__svg
     width: 25px
@@ -117,5 +118,5 @@
     cursor: pointer
 
   &__close-svg
-    width: 20px
-    height: 20px
+    width: 30px
+    height: 30px

@@ -19,6 +19,7 @@ a, p
 h1, h2,h3,h4,h5,h6
   font-family: 'TenorSans' ,sans-serif
   font-weight: 400
+  letter-spacing: 0.025em
 
 h1
   font-size: 40px
@@ -59,9 +60,11 @@ button
   background: $button-gradient
   cursor: pointer
   font-weight: 500
-  transition: background .5s ease
+  transition: all .5s ease
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 3px 0px 0px #07526e
   &:hover
     background: linear-gradient(100deg, #00CEEA 100%, #00CEEA 100%)
+    box-shadow: none
 
 
 .title-all

@@ -48,11 +48,13 @@
   &__list
     margin-bottom: 43px
   &__items
+    margin-left: 18px
     font-weight: 400
     font-size: 14px
     line-height: 130%
     letter-spacing: 0.03em
     color: #495365
+    list-style: disc
     &:not(:last-child)
       margin-bottom: 15px
 
@@ -90,6 +92,7 @@
           display: none
 
   &__count-numbers-top
+    font-family: "TenorSans", sans-serif
     margin-bottom: 8px
     font-weight: 400
     font-size: 36px
@@ -120,6 +123,10 @@
     align-items: center
     justify-content: center
     position: relative
+    padding: 15px
+    filter: drop-shadow(0px 4px 35px rgba(12, 26, 50, 0.25))
+    border-radius: 10px
+
     &:before
       content: ''
       display: flex
